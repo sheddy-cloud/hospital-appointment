@@ -1,0 +1,358 @@
+*{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+body
+{
+    background-size:cover;
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+
+#partition
+{
+    display:flex;
+    overflow: hidden;
+    opacity:0.9;
+}
+
+#partition1
+{
+    overflow: hidden;
+    flex:40%;
+    background-color:#7393B3;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:5px;
+    display: flex;
+    height:80px;
+}
+
+#partition1 h2
+{
+    margin-top:5%;
+    font-size:larger;
+    margin-left:5%;
+}
+
+#partition img
+{
+    border-bottom-right-radius:10px;
+    transition:0.9s;
+}
+
+#partition img:hover
+{
+    transform:scale(1.1);
+}
+
+#partition2
+{
+    overflow: hidden;
+    flex:60%;
+    background-color:darksalmon; 
+    height: 75px; 
+    margin-top: 2px;
+    border-bottom-right-radius:10px;
+}
+
+.links
+{
+    margin-top:7%;
+    margin-left:40%;
+}
+
+.links a
+{
+    color:black;
+    text-decoration:none;
+    transition:0.9s;
+}
+
+.links a:hover
+{
+    color:dimgray;
+}
+
+.sidenav
+{
+    background-color: dimgray;
+    height:80%;
+    width:0%;
+    position:fixed;
+    z-index:1;
+    top:2px;
+    left: 3px;
+    overflow-x:hidden;
+    transition:1s;
+    padding-top:60px;
+    border-radius:2px;
+    opacity:0.8;
+}
+
+.sidenav a
+{
+    padding:8px 8px 8px 8px;
+    text-decoration:none;
+    font-size:25px;
+    color:white;
+    display:block;
+    transition:.3s;
+}
+
+.sidenav a:hover
+{
+    color:black;
+}
+
+.sidenav .closebtn
+{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:larger;
+    margin-left:70px;
+}
+
+#main
+{
+    transition:margin-left .5s;
+    padding:16px;
+}
+
+@media screen and (max-height:450px)
+{
+    .sidenav{padding-top: 15px;}
+    .sidenav a {font-size:20px;}
+}
+
+input
+{
+    border:2px solid black;
+    border-radius:5px;
+    color:black;
+    padding:10px 40px 10px 70px;
+    background-color:white;
+    font-size:medium;
+}
+
+.body
+{
+    margin-left:10%;
+}
+
+h3{
+    margin-left:5%;
+}
+
+h4
+{
+    margin-left:20%;
+}
+
+select
+{
+    border:2px solid black;
+    padding:10px 25px 10px 25px;
+    border-radius:10px;
+    font-size:small;
+    background-color:white;
+}
+
+#submit
+{
+    margin-left:10%;
+    border:3px solid black;
+    border-radius: 10px;
+    font-size: medium;
+    padding:5px 20px 5px 20px
+}
+
+#reset
+{
+    border:3px solid black;
+    border-radius: 10px;
+    padding:5px 20px 5px 20px;
+}
+
+.split
+{
+    display:flex;
+    flex:1;
+    margin-top:1%;
+    opacity:0.9;
+}
+
+.leftside
+{
+    background-color:lightgray;
+    border-radius:10px;
+    flex:30%;
+    height: 100vh;
+    opacity:0.9;
+}
+
+.rightside
+{
+    background-color:white;
+    border-radius:10px;
+    flex:70%;
+    overflow-y:auto;
+    height:100vh;
+    opacity:0.9;
+    border-bottom:5px solid lightgray;
+    border-top:5px solid lightgray;
+    border-right:5px solid lightgray;
+}
+
+.rightside h3{
+    margin-left: 10%;
+}
+
+#doctor1
+{
+    margin-left:5%;
+    display:flex;
+}
+
+#doctor1 p button{
+    margin-top:3%;
+    margin-left:20%;
+    border-radius:5px;
+    padding:3px 5px 3px 5px;
+    transition:0.5s;
+    background-color:transparent;
+}
+
+#doctor1 p button:hover
+{
+    background-color:rgb(171, 164, 164);
+    transform:scale(1.1);
+}
+
+.image1
+{
+    margin: auto;
+    border:20px solid transparent;
+    border-radius:30px;
+    transition: .5s;
+}
+
+#doctor1 .image1:hover
+{
+    transform:scale(1.1);
+}
+
+#doctor2
+{
+    margin-left:5%;
+    display:flex;
+}
+
+#doctor2 .image2
+{
+    margin: auto;
+    border:20px solid transparent;
+    border-radius:30px;
+    transition:0.5s;
+}
+
+#doctor2 .image2:hover
+{
+    transform:scale(1.1);
+}
+
+#doctor2 p button{
+    margin-top:3%;
+    margin-left:21%;
+    border-radius:5px;
+    padding:3px 5px 3px 5px;
+    transition:.5s;
+    background-color:transparent;
+}
+
+#doctor2 p button:hover
+{
+    background-color:rgb(171, 164, 164);
+    transform:scale(1.1);
+}
+
+#doctor3
+{
+    display:flex;
+    margin-left:2%;
+}
+
+#doctor3 p
+{
+    margin-right:1%;
+}
+
+#doctor3 .image3
+{
+    margin:auto;
+    border:20px solid transparent;
+    border-radius:30px;
+    transition:0.5s;
+}
+
+#doctor3 .image3:hover
+{
+    transform:scale(1.1);
+}
+
+#doctor3 p button{
+    margin-top:3%;
+    margin-left:20%;
+    border-radius:5px;
+    padding:3px 5px 3px 5px;
+    transition:.5s;
+    background-color:transparent;
+}
+
+#doctor3 p button:hover
+{
+    background-color:rgb(171, 164, 164);
+    transform:scale(1.1);
+}
+
+#doctor4
+{
+    display:flex;
+    margin-left:2%;
+}
+
+#doctor4 p
+{
+    margin-right:1%;
+}
+
+#doctor4 .image4
+{
+    margin:auto;
+    border:20px solid transparent;
+    border-radius:30px;
+    transition:0.5s;
+}
+
+#doctor4 .image4:hover
+{
+    transform:scale(1.1);
+}
+
+#doctor4 p button{
+    margin-top:3%;
+    margin-left:20%;
+    border-radius:5px;
+    padding:3px 5px 3px 5px;
+    transition:.5s;
+    background-color:transparent;
+}
+
+#doctor4 p button:hover
+{
+    background-color:rgb(171, 164, 164);
+    transform:scale(1.1);
+}
+
+p
+{
+    margin-top:5%;
+}

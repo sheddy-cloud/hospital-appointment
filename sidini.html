@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="sidini.css">
+    </head>
+    <body>
+        <div id="mysidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times</a>
+            <a href="Login.html"><li>My Profile Login</li></a>
+            <a href="#"><li>Reviews</li></a>
+            <a href="#"><li>Job Vacancies</li></a>
+            <a href="#"><li>Pay your bill</li></a>
+
+            <p>Follow us for more updates on:</p>
+          <div class="icons">
+            <a href=""><img src="fbicon.png" width="40px" height="40px"></a>
+            <a href=""><img src="igcon.png" width="40px" height="40px"></a>
+            <a href=""><img src="xicon.png" width="40px" height="40px"></a>
+          </div>        
+        </div>
+      
+    <div class="main">
+      <div class="top"> 
+        <img src="cpp/images.jfif" width="80px" height="55px">
+        <h2>SYDNEY INTERNATIONAL HOSPITAL</h2>
+        <marquee scrollamount="5" direction="right">Helping to achieve a great and healthy life</marquee>
+        <nav class="intro">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">NEWS UPDATES</a></li>
+                <li><a href="">ABOUT US</a></li>
+            </ul>
+        </nav>
+      </div>
+      <button class="menu" onclick="opennav()">&#9776</button>
+      <img class="middle" src="cpp/sydneypic1.jpg" width="750px" height="450px">
+
+      <div class="bottom">
+           <a href=""><button class="doctor">FIND A DOCTOR</button></a>
+           <a href="appointment.html"><button class="appointment">APPOINTMENT</button></a>
+           <a href=""><button class="education">EDUCATION</button></a>
+           <a href="donation.html"><button class="donation">DONATION</button></a>         
+      </div>
+    </div>
+
+    <div class="below">
+        p
+    </div>
+
+    <script>
+        function opennav(){
+            document.getElementById("mysidenav").style.width="250px";
+            document.getElementById("main").style.marginLeft="250px";
+            document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+        }
+
+        function closenav(){
+            document.getElementById("mysidenav").style.width="0";
+            document.getElementById("main").style.marginLeft="0";
+            document.body.style.backgroundColor="white";
+        }
+    </script>
+      
+    </body>
+</html>
+

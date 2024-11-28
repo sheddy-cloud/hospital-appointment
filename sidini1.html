@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="sidini1.css">
+    </head>
+   <body>
+      <div id="mysidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times</a>
+         <a href="Login.html"><li>My Profile Login</li></a>
+         <a href="#"><li>Reviews</li></a>
+         <a href="#"><li>Job Vacancies</li></a>
+         <a href="#"><li>Pay your bill</li></a>
+         <a href="doctor.html"><li>Find a doctor</li></a>
+         <a href="#"><li>Education</li></a>
+         <a href="appointment.html"><li>Appointment</li></a>
+         <a href="donation.html"><li>Donation</li></a>
+     </div>
+   
+       <div id="partition">
+          <div id="partition1">
+            <img src="cpp/images.jfif" width="85px" height="50px" ><h2>SYDNEY INTERNATIONAL HOSPITAL</h2>
+          </div>
+           <div id="partition2">
+            <div class="links">
+             <a href="sidini1.html" style="border:10px solid transparent">HOME</a>
+             <a href="appointment.html" style="border:10px solid transparent">APPOINTMENT</a>
+             <a href="#" style="border:10px solid transparent">ABOUT US</a>
+             <a href="floor" style="border:10px solid transparent">CONTACT US</a>
+            </div> 
+           </div>
+       </div>
+       <button class="menu" onclick="opennav()">&#9776</button>
+
+      
+      <div class="middle">
+          <marquee scrollamount="8" direction="right"><h3 class="text">Focusing on health care to improve lives and support development</h3></marquee>
+      </div> 
+          
+       <div class="bottom" style="background-color:#7393B3;">
+           <a href="#" class="doctor"><b>FIND A DOCTOR</b></a>
+           <a href="#" class="education"><b>EDUCATION</b></a>
+           <a href="donation.html" class="donate"><b>DONATION</b></a>
+       </div>
+
+       <div class="floor">
+         <div class="motto">
+           <h3>SYDNEY INTERNATIONAL HOSPITAL</h3>
+           <p>
+            Motivated to improve health care provision<br>
+            and ensure the best health status of every<br>
+            individual and the world at large
+            </p>
+         </div>   
+
+         <div class="surplus">
+            <h3>WORKING HOURS</h3>
+            <img class="time" src="cpp/time.png" width="50px" height="50px" >Monday through to Friday 24hours a day</p>
+
+           <h3>OUR LOCATION</h3>
+            <p>
+               Plot 455, Haile Sellasie road, Next to the<br> Mercedes showroom,
+            Munich, Germany
+            </p>
+
+            <h3>Follow us on:</h3>
+            <a href="#"><img src="igcon.png" width="60px" height="60px"></a>
+            <a href="#" style="margin-left:2%;"><img src="xicon.png" width="60px" height="60px"></a>
+            <a href="#" style="margin-left:2%;"><img src="fbicon.png" width="60px" height="60px"></a>
+         </div>
+
+         <div class="mosurplus">
+            <h3>VISITING HOURS</h3>
+              <p>06:00a.m-07:15a.m</p>
+              <p>12:30p.m-02:15p.m</p>
+              <p>05:30p.m-06:45p.m</p>
+            
+            <h3>VISITATION GUIDELINES</h3>
+            <p>Only two(2) visitors are allowed per patient</p>  
+            <p>Only one(1) companion is allowed to stay overnight <br>
+               for private and semi-private wardrooms
+            </p>
+            <p>Only one(1) visitor is allowed if patient is in the <br>
+               isolation ward
+            </p>
+          </div>
+       </div>
+       <span>Powered by QuantumWeb Solutions &copy 2024</span>
+
+       <script>
+         /*sidemenu*/
+         function opennav(){
+             document.getElementById("mysidenav").style.width="250px";
+             document.getElementById("main").style.marginLeft="250px";
+             document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+         }
+ 
+         function closenav(){
+             document.getElementById("mysidenav").style.width="0";
+             document.getElementById("main").style.marginLeft="0";
+             document.body.style.backgroundColor="white";
+         }
+     </script>
+   </body> 
+</html>

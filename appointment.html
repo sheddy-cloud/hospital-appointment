@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="appoint.css">
+    </head>
+    
+  <body>
+    <div id="mysidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times</a>
+      <a href="Login.html"><li>My Profile Login</li></a>
+      <a href="#"><li>Reviews</li></a>
+      <a href="#"><li>Job Vacancies</li></a>
+      <a href="#"><li>Pay your bill</li></a>
+      <a href="#"><li>Find a doctor</li></a>
+      <a href="#"><li>Education</li></a>
+      <a href="appointment.html"><li>Appointment</li></a>
+      <a href="donation.html"><li>Donation</li></a>
+  </div>
+
+    <div id="partition">
+      <div id="partition1">
+        <img src="cpp/images.jfif" width="85px" height="50px" ><h2>SYDNEY INTERNATIONAL HOSPITAL</h2>
+      </div>
+       <div id="partition2">
+        <div class="links">
+         <a href="sidini1.html" style="border:10px solid transparent">HOME</a>
+         <a href="appointment.html" style="border:10px solid transparent">APPOINTMENT</a>
+         <a href="#" style="border:10px solid transparent">ABOUT US</a>
+         <a href="#" style="border:10px solid transparent">CONTACT US</a>
+        </div> 
+       </div>
+   </div>
+   <button class="menu" onclick="opennav()">&#9776</button>
+
+    <div class="split">  
+     <div class="leftside">
+      <h3>SYDNEY APPOINTMENT SYSTEM</h3>
+      <h4>(for any Sydney specialist)</h4>
+      <div class="body">
+        <p>Fill in the credentials as required  below:</p>
+        <input type="text"  placeholder="First Name" required><br><br>
+        <input type="text" placeholder="Middle Name" required><br><br>
+        <input type="text" placeholder="Surname" required><br><br>
+
+       Gender:<input type="radio" input name="Gender">Male
+              <input type="radio" input name="Gender">Female<br><br>
+
+        <input type="text" placeholder="File ID" required><br><br>
+    
+        <label>Department:</label>
+        <select>
+            <option></option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Nephrology</option>
+            <option>Physiotherapy</option>
+            <option>Dialysis</option>
+            <option>Radiology</option>
+            <option>Therapist</option>
+        </select> (if aware)<br><br>
+       
+        <button id="submit" type="submit">Submit</button>
+        <input type="reset" id="reset" value="Reset">
+       </div>
+      </div>
+      <div class="rightside">
+        <h3>AVAILABLE SYDNEY SPECIALISTS</h3>
+         <div id="doctor1">
+              <img class="image1" src="cpp/doctor1.webp" width="230px" height="150px" alt="doctor's image">
+              <p>
+                Aisha Ramadhani<br>
+                Neurology Department<br>
+                Neuropsychology Specialist<br>
+                Available from 0930hrs-1700hrs on Mondays and Fridays<br>
+                Status: Available
+                <button>MAKE APPOINTMENT</button>
+              </p>              
+         </div>
+
+         <div id="doctor2">
+             <img class="image2" src="cpp/doctor2.webp" width="230px" height="150px" alt="doctor's image">
+             <p>
+                 Jordan Jorgenssen,<br>
+                 Cardiology Department,<br>
+                 Heart Surgeon,<br>
+                 Available from 1100hrs-1800hrs Thursdays and Saturdays,<br>
+                 Status: Available
+                 <button>MAKE APPOINTMENT</button>
+             </p>
+         </div>
+         
+         <div id="doctor3">
+          <img class="image3" src="cpp/doctor3.jpg" width="240px" height="160px" alt="doctor's image">
+          <p>
+              Josep Yakoub,<br>
+              Neurology Department,<br>
+              Therapist,<br>
+              Available from 0730hrs-1400hrs Tuessdays and Fridays,<br>
+              Status:Available
+              <button>MAKE APPOINTMENT</button>
+          </p>
+      </div>
+
+        <div id="doctor4">
+          <img class="image4" src="cpp/doctor3.jpg" width="230px" height="150px" alt="doctor's image">
+          <p>
+            Josep Yakoub,<br>
+            Neurology Department,<br>
+            Therapist,<br>
+            Available from 0730hrs-1400hrs Tuessdays and Fridays,<br>
+            Status:Available
+            <button>MAKE APPOINTMENT</button>
+        </p>             
+        </div>
+
+        <div id="doctor4">
+          <img class="image4" src="cpp/doctor3.jpg" width="230px" height="150px" alt="doctor's image">
+          <p>
+            Josep Yakoub,<br>
+            Neurology Department,<br>
+            Therapist,<br>
+            Available from 0730hrs-1400hrs Tuessdays and Fridays,<br>
+            Status:Available
+            <button>MAKE APPOINTMENT</button>
+        </p>             
+        </div>
+      </div>
+    </div>
+      <script>
+        function opennav(){
+            document.getElementById("mysidenav").style.width="250px";
+            document.getElementById("main").style.marginLeft="250px";
+            document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+        }
+
+        function closenav(){
+            document.getElementById("mysidenav").style.width="0";
+            document.getElementById("main").style.marginLeft="0";
+            document.body.style.backgroundColor="white";
+        }
+    </script>
+  </body>
+</html>
